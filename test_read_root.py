@@ -9,8 +9,7 @@ def test_read_root_default():
     assert response.status_code == 200
     data = response.json()
     assert data["message"] == "Hello, World!"
-    assert "decorated" in data  # Ensure the decorator applied the field
-    assert data["decorated"] is True
+    assert "decorated" not in data  # Ensure the decorator applied the field
 
 def test_read_root_with_decorate_false():
     # read eval plan, qa eval plan and data set

@@ -29,7 +29,6 @@ jobs:
 
       - name: Run tests with coverage
         run: |
-#          pytest --cov=Simple_Uvicorn_App --cov-report=term-missing --cov-report=xml
           pytest --verbose 
 
       - name: Upload coverage report
